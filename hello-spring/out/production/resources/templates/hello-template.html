@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--서버를 이용하면 text 값으로 나오고 서버 연결 없이 html만 열면 hello! empty가 출력된다.-->
+<!--컨트롤러 url에서 가져온 name을 입력으로 받는다-->
+<p th:text="'hello ' + ${name}">hello! empty</p>
+</body>
+</html>
